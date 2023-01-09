@@ -80,7 +80,7 @@ def how_does_it_do_that(session):
     users = session.query(User).filter(User.name == "wendy").all()
     print(f"session.new: {session.new}")
     print(
-        "This variable is now empty - it commits all transactions before retrieving new data"
+        "session.new is now empty - it commits all transactions before retrieving new data"
     )
 
 
